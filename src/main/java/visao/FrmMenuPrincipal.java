@@ -27,24 +27,24 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenuArquivo = new javax.swing.JMenu();
-        jMenuItemNovoAluno = new javax.swing.JMenuItem();
+        jMenuNovo = new javax.swing.JMenu();
+        jMenuItemCadastrarAluno = new javax.swing.JMenuItem();
         jMenuItemGerenciarAlunos = new javax.swing.JMenuItem();
+        jMenuSair = new javax.swing.JMenu();
         jMenuItemSair = new javax.swing.JMenuItem();
-        jMenuSobre = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Principal");
 
-        jMenuArquivo.setText("Arquivos");
+        jMenuNovo.setText("Novo");
 
-        jMenuItemNovoAluno.setText("Cadastrar Aluno");
-        jMenuItemNovoAluno.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemCadastrarAluno.setText("Cadastrar Aluno");
+        jMenuItemCadastrarAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemNovoAlunoActionPerformed(evt);
+                jMenuItemCadastrarAlunoActionPerformed(evt);
             }
         });
-        jMenuArquivo.add(jMenuItemNovoAluno);
+        jMenuNovo.add(jMenuItemCadastrarAluno);
 
         jMenuItemGerenciarAlunos.setText("Gerenciar Aluno");
         jMenuItemGerenciarAlunos.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +52,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
                 jMenuItemGerenciarAlunosActionPerformed(evt);
             }
         });
-        jMenuArquivo.add(jMenuItemGerenciarAlunos);
+        jMenuNovo.add(jMenuItemGerenciarAlunos);
+
+        jMenuBar1.add(jMenuNovo);
+
+        jMenuSair.setText("Sair");
 
         jMenuItemSair.setText("Sair");
         jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
@@ -60,12 +64,9 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
                 jMenuItemSairActionPerformed(evt);
             }
         });
-        jMenuArquivo.add(jMenuItemSair);
+        jMenuSair.add(jMenuItemSair);
 
-        jMenuBar1.add(jMenuArquivo);
-
-        jMenuSobre.setText("Sobre");
-        jMenuBar1.add(jMenuSobre);
+        jMenuBar1.add(jMenuSair);
 
         setJMenuBar(jMenuBar1);
 
@@ -83,11 +84,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItemNovoAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNovoAlunoActionPerformed
+    private void jMenuItemCadastrarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarAlunoActionPerformed
        FrmCadastroAluno objeto = new FrmCadastroAluno();
        objeto.setVisible(true);
        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItemNovoAlunoActionPerformed
+    }//GEN-LAST:event_jMenuItemCadastrarAlunoActionPerformed
 
     private void jMenuItemGerenciarAlunosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGerenciarAlunosActionPerformed
         FrmGerenciaAluno objeto = new FrmGerenciaAluno();
@@ -134,11 +135,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenuArquivo;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemCadastrarAluno;
     private javax.swing.JMenuItem jMenuItemGerenciarAlunos;
-    private javax.swing.JMenuItem jMenuItemNovoAluno;
     private javax.swing.JMenuItem jMenuItemSair;
-    private javax.swing.JMenu jMenuSobre;
+    private javax.swing.JMenu jMenuNovo;
+    private javax.swing.JMenu jMenuSair;
     // End of variables declaration//GEN-END:variables
 }
