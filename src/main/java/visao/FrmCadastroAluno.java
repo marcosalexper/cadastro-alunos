@@ -163,7 +163,7 @@ public class FrmCadastroAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_JBCadastrarActionPerformed
 
     private void JBVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBVoltarActionPerformed
-       new FrmMenuPrincipal().show(); dispose();
+       new FrmMenuPrincipal().show(); dispose(); 
     }//GEN-LAST:event_JBVoltarActionPerformed
 
     /**
