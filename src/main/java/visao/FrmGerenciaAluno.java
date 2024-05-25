@@ -59,14 +59,19 @@ public class FrmGerenciaAluno extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(JTableAlunos);
 
-        jLabel1.setText("Nome:");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("NOME:");
 
-        jLabel2.setText("Idade:");
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setText("IDADE:");
 
-        jLabel3.setText("Curso:");
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setText("CURSO:");
 
-        jLabel4.setText("Fase:");
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setText("FASE:");
 
+        JBCancelar.setBackground(new java.awt.Color(204, 0, 0));
         JBCancelar.setText("Cancelar");
         JBCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +128,7 @@ public class FrmGerenciaAluno extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(JBApagar)
                                         .addGap(79, 79, 79)))))
-                        .addGap(0, 21, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

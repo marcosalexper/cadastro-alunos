@@ -21,7 +21,9 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Principal");
 
-        jMenuNovo.setText("Novo");
+        jMenuBar1.setBackground(new java.awt.Color(153, 204, 255));
+
+        jMenuNovo.setText("NOVO");
 
         jMenuItemCadastrarAluno.setText("Cadastrar Aluno");
         jMenuItemCadastrarAluno.addActionListener(new java.awt.event.ActionListener() {
@@ -41,7 +43,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuNovo);
 
-        jMenu2.setText("Sair");
+        jMenu2.setText("SAIR");
 
         jMenuItemSair.setText("Sair");
         jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
