@@ -30,7 +30,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         jMenuNovo = new javax.swing.JMenu();
         jMenuItemCadastrarAluno = new javax.swing.JMenuItem();
         jMenuItemGerenciarAlunos = new javax.swing.JMenuItem();
-        jMenuSair = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
         jMenuItemSair = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -56,7 +56,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuNovo);
 
-        jMenuSair.setText("Sair");
+        jMenu2.setText("Sair");
 
         jMenuItemSair.setText("Sair");
         jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
@@ -64,9 +64,9 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
                 jMenuItemSairActionPerformed(evt);
             }
         });
-        jMenuSair.add(jMenuItemSair);
+        jMenu2.add(jMenuItemSair);
 
-        jMenuBar1.add(jMenuSair);
+        jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
 
@@ -74,11 +74,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 657, Short.MAX_VALUE)
+            .addGap(0, 310, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 457, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         pack();
@@ -96,7 +96,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemGerenciarAlunosActionPerformed
 
     private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
-        System.exit(0);// TODO add your handling code here:
+       System.exit(0);
     }//GEN-LAST:event_jMenuItemSairActionPerformed
 
     /**
@@ -135,11 +135,11 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItemCadastrarAluno;
     private javax.swing.JMenuItem jMenuItemGerenciarAlunos;
     private javax.swing.JMenuItem jMenuItemSair;
     private javax.swing.JMenu jMenuNovo;
-    private javax.swing.JMenu jMenuSair;
     // End of variables declaration//GEN-END:variables
 }
