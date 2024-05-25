@@ -1,4 +1,2 @@
-## Cadastro Alunos
-Projeto base para cadastro e controle de alunos.
-1. Adiconar
-2. Gerenciar
+## Cadastro de Alunos
+Projeto teste para cadastro e controle de alunos em uma tabela.
